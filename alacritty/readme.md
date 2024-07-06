@@ -1,0 +1,1 @@
+[alacritty/alacritty-theme: Collection of Alacritty color schemes (github.com)](https://github.com/alacritty/alacritty-theme)
