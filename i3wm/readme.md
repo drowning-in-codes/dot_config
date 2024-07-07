@@ -3,10 +3,11 @@ i3wm's ecosystem is very strong, but most wms (including i3) themself only conta
 for example, you may also need:
 
 - rofi   app launcher
+- i3lock(or slock) lock screen
 - picom(or compton)  compositor to add smooth window transition
 - polybar(or i3blocks) alternative to i3status bar
-- feh(or swww) change wallpaper
-- ranger(or yazi) terminal file manger
+- feh(or swww,Nitrogen) change wallpaper
+- ranger(or yazi,Thunar) terminal file manger
 - alacritty(or kitty) terminal w/ emulator
 - dunst for notification(alternative to i3-nagbar)
 
@@ -17,3 +18,6 @@ for example, you may also need:
 - [Zerodya/dots: My personal Arch/Artix linux dotfiles (github.com)](https://github.com/Zerodya/dots)
 - [laintnaya/i3wm-rice-BlueLain: My i3wm rice Serial Experiments Lain (github.com)](https://github.com/laintnaya/i3wm-rice-BlueLain?tab=readme-ov-file):star:
 - [washonrails/dotfiles: 💠All dotfiles of i3wm (github.com)](https://github.com/washonrails/dotfiles?tab=readme-ov-file)
+- [Algorithm79/Dotfiles_i3: Configuration files for i3wm (github.com)](https://github.com/Algorithm79/Dotfiles_i3):star:
+
+You don't actually need to install all the packages from others,simply choose one of the tools in the category.
