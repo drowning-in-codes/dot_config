@@ -14,7 +14,7 @@ config.font = wezterm.font_with_fallback({
 	"JetBrains Mono",
 })
 -- wallpaper
-local dimmer = { brightness = 0.1 }
+local dimmer = { brightness = 0.9 }
 config.enable_scroll_bar = true
 config.min_scroll_bar_height = "2cell"
 config.background = {
@@ -22,10 +22,11 @@ config.background = {
 		source = { File = "~/dotfiles/wezterm/images/eva.jpg" },
 		repeat_x = "Mirror",
 		hsb = dimmer,
+		opacity = 0.9,
 		-- When the viewport scrolls, move this layer 10% of the number of
 		-- pixels moved by the main viewport. This makes it appear to be
 		-- further behind the text.
-		attachment = { Parallax = 0.1 },
+		-- attachment = { Parallax = 0.1 },
 	},
 }
 
