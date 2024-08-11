@@ -6,6 +6,8 @@ local config = wezterm.config_builder()
 config.window_background_opacity = 0.8
 config.use_fancy_tab_bar = false
 config.hide_tab_bar_if_only_one_tab = true
+-- remove title bar
+-- config.window_decorations = "RESIZE"
 config.font = wezterm.font_with_fallback({
 	"MesloLGS NF",
 	"Monaspace Krypton",
