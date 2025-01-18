@@ -4,6 +4,7 @@
 
 -- @docs https://github.com/Civitasv/cmake-tools.nvim/blob/master/docs/all_commands.md
 -- use keymap for cmake-tools.nvim
+local cmake = require("cmake-tools")
 vim.keymap.set("n", "<leader>cg", function()
   cmake.select_launch_target(function()
     vim.cmd("CMakeGenerate")
