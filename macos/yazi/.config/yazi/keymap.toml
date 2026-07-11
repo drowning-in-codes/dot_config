@@ -1,0 +1,51 @@
+# keymap.toml
+[[manager.prepend_keymap]]
+on   = [ "<C-s>" ]
+run  = 'shell "$SHELL" --block --confirm'
+desc = "Open shell here"
+
+[[input.prepend_keymap]]
+on  = [ "k" ]
+run = "plugin --sync arrow --args=-1"
+
+[[input.prepend_keymap]]
+on  = [ "j" ]
+run = "plugin --sync arrow --args=1"
+
+[[manager.prepend_keymap]]
+on  = [ "<C-n>" ]
+run = '''
+	shell 'dragon -x -i -T "$1"' --confirm
+'''
+
+[[manager.prepend_keymap]]
+on  = [ "y" ]
+run = [ '''
+	shell 'echo "$@" | xclip -i -selection clipboard -t text/uri-list' --confirm
+''', "yank" ]
+
+[[input.prepend_keymap]]
+on   = [ "p" ]
+run  = "plugin --sync smart-paste"
+desc = "Paste into the hovered directory or CWD"
+
+[[input.prepend_keymap]]
+on   = [ "l" ]
+run  = "plugin --sync smart-enter"
+desc = "Enter the child directory, or open the file"
+
+[[input.prepend_keymap]]
+on   = [ "<Esc>" ]
+run  = "close"
+desc = "Cancel input"
+
+[[manager.prepend_keymap]]
+on   = [ "T" ]
+run  = "plugin --sync hide-preview"
+desc = "Hide or show preview"
+
+
+[[manager.prepend_keymap]]
+on   = [ "T" ]
+run  = "plugin --sync max-preview"
+desc = "Maximize or restore preview"
